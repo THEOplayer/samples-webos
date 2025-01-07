@@ -10,8 +10,11 @@
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-typescript": "^4.1.1",
-    "tslib": "^1.11.1",
     "rollup": "^2.7.6",
+    "tslib": "^1.11.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "theoplayer": "^8.8.1"
   }
 }
