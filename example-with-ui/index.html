@@ -43,14 +43,14 @@
     </div>
     <div class="theo-overlay hidden"></div>
 </div>
-<script src='libs/THEOplayer.chromeless.js'></script>
+<script src='js/theoplayer/THEOplayer.chromeless.js'></script>
 <script src="js/Main.js"></script>
 
 <script>
     var element = document.querySelector('.theoplayer-webos');
     var player = new THEOplayer.Player(element, {
         fluid: true,
-        libraryLocation: 'libs/'
+        libraryLocation: 'js/theoplayer/'
     });
 
     var showCase = {
