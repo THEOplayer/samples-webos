@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Theo WebOS Reference App",
   "scripts": {
-    "build": "rollup -c ./rollup.config.js",
+    "bundle": "rollup -c ./rollup.config.js",
+    "build": "npm run bundle && cp -R ./node_modules/@theoplayer/basic-hls-dash/ ./js/theoplayer",
+    "copy-app": "cp -R js/ ./app/js && cp -R css/ ./app/css && cp index.html ./app/index.html",
+    "package": "npm run build && npm run copy-app && ares-package  ./app --outdir ./",
     "watch": "rollup -c ./rollup.config.js --watch"
   },
   "author": "",
@@ -15,6 +18,6 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "theoplayer": "^8.8.1"
+    "@theoplayer/basic-hls-dash": "^8.8.2"
   }
 }
