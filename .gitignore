@@ -6,6 +6,9 @@
 # Node artifact files
 node_modules/
 dist/
+example-with-ui/app/js
+example-with-ui/app/css
+example-with-ui/js/
 
 # Compiled Java class files
 *.class
