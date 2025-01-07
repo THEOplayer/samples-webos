@@ -68,11 +68,11 @@
         },
         dashDrm: {
             sources: {
-                src: 'https://amssamples.streaming.mediaservices.windows.net/622b189f-ec39-43f2-93a2-201ac4e31ce1/BigBuckBunny.ism/manifest(format=mpd-time-csf)',
+                src: 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
                 type: 'application/dash+xml',
                 drm: {
                     widevine: {
-                        licenseAcquisitionURL: 'https://amssamples.keydelivery.mediaservices.windows.net/Widevine/?KID=1ab45440-532c-4399-94dc-5c5ad9584bac',
+                        licenseAcquisitionURL: 'https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test',
                     }
                 }
             }
